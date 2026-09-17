@@ -49,7 +49,9 @@ _SPLIT = re.compile(r"\s+and\s+|\s+or\s+|,\s+|\?\s*")
 
 
 def variant_keywords(q: str) -> str:
-    return " ".join(tokenize(q))
+    # Falls back to the question itself: an empty rewrite is not a "view", it is a
+    # silently dropped fusion arm, and RRF gives no sign that one went missing.
+    return " ".join(tokenize(q)) or q
 
 
 def variant_entities(q: str) -> str:
@@ -58,7 +60,7 @@ def variant_entities(q: str) -> str:
     body = q[0].lower() + q[1:] if q else q
     found = [m.group(0).strip() for m in _ENTITY.finditer(body)]
     found = [f for f in found if len(f) > 2]
-    return " ".join(found) if found else variant_keywords(q)
+    return " ".join(found) if found else variant_keywords(q)  # never empty
 
 
 def variant_quoted(q: str) -> str:

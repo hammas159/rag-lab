@@ -1,0 +1,22 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 2162.07it/s]
+corpus: 14602 passages, queries: 500
+
+drafter alone (no verifier)
+  bm25     answerable@10=0.608  (2.2s)
+  dense    answerable@10=0.798  (12.82s)
+  hybrid   answerable@10=0.824  (15.6s)
+
+drafter + cross-encoder verifier
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights:  13%|#3        | 14/105 [00:00<00:00, 96.45it/s]Loading weights:  23%|##2       | 24/105 [00:00<00:01, 70.29it/s]Loading weights:  30%|###       | 32/105 [00:00<00:01, 44.09it/s]Loading weights:  36%|###6      | 38/105 [00:00<00:01, 39.88it/s]Loading weights:  41%|####      | 43/105 [00:01<00:01, 34.00it/s]Loading weights: 100%|##########| 105/105 [00:01<00:00, 102.24it/s]
+  bm25     pool=20   answerable@10=0.756  (121.26s, 243 ms/query)
+  bm25     pool=50   answerable@10=0.800  (192.08s, 384 ms/query)
+  bm25     pool=100  answerable@10=0.810  (246.25s, 492 ms/query)
+  dense    pool=20   answerable@10=0.822  (58.61s, 117 ms/query)
+  dense    pool=50   answerable@10=0.826  (136.89s, 274 ms/query)
+  dense    pool=100  answerable@10=0.826  (215.5s, 431 ms/query)
+  hybrid   pool=20   answerable@10=0.826  (54.95s, 110 ms/query)
+  hybrid   pool=50   answerable@10=0.824  (134.14s, 268 ms/query)
+  hybrid   pool=100  answerable@10=0.820  (222.53s, 445 ms/query)
+
+written to results.json

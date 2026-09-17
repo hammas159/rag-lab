@@ -1,0 +1,29 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  68%|######7   | 135/199 [00:00<00:00, 1337.56it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1710.04it/s]
+corpus: 14602 passages, queries: 1500
+
+  100/1500 generated (2.20s each)
+  200/1500 generated (1.99s each)
+  300/1500 generated (1.84s each)
+  400/1500 generated (1.79s each)
+  500/1500 generated (1.79s each)
+  600/1500 generated (1.75s each)
+  700/1500 generated (1.72s each)
+  800/1500 generated (1.70s each)
+  900/1500 generated (1.71s each)
+  1000/1500 generated (1.73s each)
+  1100/1500 generated (1.74s each)
+  1200/1500 generated (1.77s each)
+  1300/1500 generated (1.75s each)
+  1400/1500 generated (1.74s each)
+  1500/1500 generated (1.77s each)
+generated 1500 passages in 2653s
+empty generations: 0
+
+baseline (question only)   mrr=0.891  recall@10=0.905  answerable@10=0.813  (46.54s)
+PRF (no model)             mrr=0.826  recall@10=0.910  answerable@10=0.831  (110.45s)
+HyDE (7b-instruct)         mrr=0.884  recall@10=0.898  answerable@10=0.803  (49.08s)
+HyDE passage alone         mrr=0.877  recall@10=0.881  answerable@10=0.771  (48.88s)
+PRF + HyDE fused           mrr=0.876  recall@10=0.923  answerable@10=0.852  (161.13s)
+
+written to results.json

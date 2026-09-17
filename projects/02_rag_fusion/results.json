@@ -26,7 +26,7 @@
         "10": 0.81,
         "20": 0.8212
       },
-      "seconds": 28.36,
+      "seconds": 35.82,
       "mean_subqueries": 1.0
     },
     "original + keywords": {
@@ -53,7 +53,7 @@
         "10": 0.8069,
         "20": 0.8172
       },
-      "seconds": 56.72,
+      "seconds": 71.6,
       "mean_subqueries": 2.0
     },
     "original + entities": {
@@ -80,7 +80,7 @@
         "10": 0.7498,
         "20": 0.7681
       },
-      "seconds": 51.74,
+      "seconds": 67.39,
       "mean_subqueries": 2.0
     },
     "original + split": {
@@ -107,7 +107,7 @@
         "10": 0.7832,
         "20": 0.7988
       },
-      "seconds": 47.09,
+      "seconds": 59.18,
       "mean_subqueries": 1.75
     },
     "original + keywords + entities": {
@@ -134,7 +134,7 @@
         "10": 0.7766,
         "20": 0.7909
       },
-      "seconds": 78.29,
+      "seconds": 105.99,
       "mean_subqueries": 2.97
     },
     "all five views": {
@@ -161,7 +161,7 @@
         "10": 0.7689,
         "20": 0.7838
       },
-      "seconds": 101.71,
+      "seconds": 132.7,
       "mean_subqueries": 3.8
     }
   }
