@@ -1,0 +1,24 @@
+[project]
+name = "rag-lab"
+version = "0.1.0"
+description = "RAG techniques measured as retrieval, on one real corpus, with no language model in the loop."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "datasets>=2.19",
+    "numpy>=1.26",
+    "sentence-transformers>=3.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
