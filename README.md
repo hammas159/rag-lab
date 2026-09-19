@@ -1,4 +1,4 @@
-<h1 align="center">rag-lab</h1>
+<h1 align="center">rag-lab (NumPy · sentence-transformers · HuggingFace Datasets)</h1>
 <p align="center"><i>Eight RAG techniques measured as retrieval, on one real corpus, with almost no language model in the loop</i></p>
 
 <p align="center">
